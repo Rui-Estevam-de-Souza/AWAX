@@ -188,3 +188,17 @@ header {
 .default.dark .section-title {
     color: #FFF;
 }
+
+
+
+
+.section-aboutUs {
+    display: flex;
+}
+.section-aboutUs--left {
+    flex: 1;
+}
+.section-aboutUs--right {
+    width: 300px;
+}
+
