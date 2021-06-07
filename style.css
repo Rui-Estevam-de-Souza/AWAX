@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 body {
+    width: calc(100vw + 30px);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    margin: 0;
     overflow-x: hidden;
-    margin-left: -15px;
 }
 
 
@@ -92,7 +93,7 @@ header {
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
-    background-image: url('assets/images/bg.jpg');
+    background-image: url('AWAX/assets/images/bg.jpg');
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
@@ -406,4 +407,139 @@ header {
 }
 .section-team--social a:hover {
     background-color: #B28756;
+}
+
+.happy-Clients--area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+}
+.section-happyClients--name {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.section-happyClients--hole {
+    margin-top: 5px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.happy-clients--feedback {
+    margin-top: 20px;
+    line-height: 25px;
+}
+.happy-Clients--area .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.happy-Clients--area .pointer {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B28756 ;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.happy-Clients--area .pointer.active {
+    background-color: #B28756;
+}
+
+.section-partners--area {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #FFF;
+    width: 100%;
+    border-top: 1px solid #9C9C9C;
+    border-bottom: 2px solid #999;
+    margin-bottom: 0;
+}
+.section-partners--area img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#price {
+    background-color: #E8E8E8;
+    margin-top: -50px;
+    border-bottom: 1px solid #999;
+}
+
+.section-pricingTable {
+    display: flex;
+    justify-content: center;
+}
+.section-pricingTable--option {
+    background-color: #FFF;
+    margin-left: 30px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 280px;
+}
+.section-pricingTable--level {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-pricingTable--price {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.section-pricingTable--duration {
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+}
+.section-pricingTable--bar {
+    background-color: #999;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+}
+.section-pricingTable--benefits {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.section-pricingTable--option a {
+    background-color:#363636;
+}
+.section-pricingTable--option a:hover,
+.section-pricingTable--option a.active {
+    background-color: #B28756;
+}
+
+
+.section-premium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-premium--left img {
+    background-size: cover;
+    background-position: center;
+    padding-right: 150px;
+}
+.section-premium--right {
+    text-align: left;
+}
+.section-premium--right .premium-first--bar {
+    width: 25px;
+    height: 2px;
+    background-color: #999;
 }
