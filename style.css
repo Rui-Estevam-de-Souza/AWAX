@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    width: calc(100vw + 30px);
+    width: 100vw;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
     margin: 0;
@@ -77,6 +77,9 @@ header {
 .menu .active a  {
     border-bottom: 5px solid #B28756;
     color: #ccc;
+}
+.menu-opener {
+    display: none;
 }
 
 .button {
@@ -811,4 +814,113 @@ input::placeholder {
     color: #999;
     padding-bottom: 10px;
     border-bottom: 2px solid #999;
-} 
+}
+.footer-area--item.third .button {
+    padding: 20px 50px;
+}
+
+
+
+@media (min-width:450px) and (max-width:800px) {
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 50px;
+        margin-right: 50px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: 120vw;
+        top: 100px;
+        right: 0px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 60px;
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #B28756;
+    }
+
+
+    .section-aboutUs {
+        flex-direction: column;
+    }
+    .section-aboutUs--left {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .section-aboutUs--right {
+        width: auto;
+    }
+    .section-serviceS {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 50%;
+    }
+    .section-service:first-child {
+        border-left: 0;
+    }
+    .section-team {
+        max-width: 580px;
+    }
+    .section-partners--area {
+        flex-wrap: wrap;
+    }
+    .section-partners--area img {
+        margin-top: 20px;
+    }
+    
+    .section-pricingTable {
+        flex-wrap: wrap;
+    }
+    .section-pricingTable--option {
+        margin-bottom: 10px;
+    }
+    .section-someFacts {
+        flex-wrap: wrap;
+    }
+    .section-facts {
+        min-width: 50%;
+    }
+    .social-network img {
+        padding-left: 8px;
+    }
+
+
+    .section-map {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section-map--area {
+        width: auto;
+    }
+    .section-map--info {
+        width: auto;
+    }
+
+    .footer-area {
+        flex-direction: column;
+    }
+    .footer-area--item,
+    .footer-area--item.second,
+    .footer-area--item.third  {
+        width: 100%;
+        padding: 30px;
+    }
+}
