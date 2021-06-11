@@ -1050,8 +1050,15 @@ input::placeholder {
     .section-facts {
         min-width: 50%;
     }
-    .social-network img {
-        padding-left: 8px;
+    .social-network--icon  {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .social-network--icon img {
+        margin-top: 40px;
+    }
+    .social-network--icon h5 {
+        margin: auto;
     }
 
 
